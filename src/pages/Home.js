@@ -1,9 +1,9 @@
 import React from 'react'
-import Banner from './Banner'
+import Banner from '../Banner'
 import './Home.css'
-import Navbar from './Navbar'
-import Row from './Row'
-import request from './Request'
+import Navbar from '../Navbar'
+import Row from '../Row'
+import request from '../Request'
 
 const Home = () => {
   return (
@@ -15,11 +15,11 @@ const Home = () => {
       {/* Row */}
       <Row
         title='NETFLIX ORIGINALS'
-        fetchUrl={request.fetchTopRated}
+        fetchUrl={request.fetchNetflixOriginals}
         isLargeRow
       />
       <Row title='Trending Now' fetchUrl={request.fetchTrending} />
-      <Row title='Top Rated' fetchUrl={request.fetchTopRated} />
+      {/* <Row title='Top Rated' fetchUrl={request.fetchTopRated} /> */}
       <Row title='Action Movies' fetchUrl={request.fetchActionMovies} />
       <Row title='Comedy Movies' fetchUrl={request.fetchComedyMovies} />
       <Row title='Romantic Movies' fetchUrl={request.fetchRomanceMovies} />

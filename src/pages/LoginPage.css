@@ -1,0 +1,94 @@
+.loginPage {
+  position: relative;
+  height: 100%;
+  background: url("https://www.xfire.com/wp-content/uploads/2022/09/netflix-cover-2-800x450.png") 
+  center no-repeat;
+  background-size: cover;
+}
+
+.loginPage-logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  padding-left: 20px;
+  object-fit: contain;
+}
+
+.loginPage-signin {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #e50914;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.loginPage-gradient {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0.4) 25%
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.4) 75%
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginPage-body {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+
+.loginPage-body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.loginPage-body > h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.loginPage-body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginPage-input {
+  margin: 20px;
+}
+
+.loginPage-input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600;
+}
+
+.loginPage-getStarted {
+  padding: 16px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+}
