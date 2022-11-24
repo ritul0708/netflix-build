@@ -51,7 +51,7 @@
   color: gray;
 }
 
-.signupPage-link {
+.signupPage-link:hover {
   cursor: pointer;
   text-decoration: underline;
 }
