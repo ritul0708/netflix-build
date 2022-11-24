@@ -45,13 +45,15 @@
 .loginPage-body {
   position: absolute;
   top: 30%;
+  /* This is not working right and left 0 works */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   z-index: 1;
   color: #fff;
   padding: 20px;
-  margin: 20px;
+  right: 0;
+  left: 0;
 }
 
 .loginPage-body > h1 {
