@@ -4,6 +4,7 @@ import { auth } from '../firebase'
 import Navbar from '../Navbar'
 import { selectUser } from '../reducers/userSlice'
 import './ProfilePage.css'
+import PlanPage from './PlanPage'
 
 const ProfilePage = () => {
   const user = useSelector(selectUser);
@@ -22,6 +23,7 @@ const ProfilePage = () => {
             <h2>{user.email}</h2>
             <div className="profilePage-subscriptionPlans">
               <h3>Subscription Plans</h3>
+              <PlanPage />
               <button 
                 onClick={() => auth.signOut()} 
                 className='profilePage-signOut'

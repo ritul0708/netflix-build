@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { auth } from '../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+// import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import './SignUpPage.css'
 
 const SignUpPage = () => {
@@ -9,7 +9,7 @@ const SignUpPage = () => {
 
   const register = e => {
     e.preventDefault();
-    createUserWithEmailAndPassword(
+    auth.createUserWithEmailAndPassword(
       auth,
       emailRef.current.value,
       passwordRef.current.value
@@ -24,7 +24,7 @@ const SignUpPage = () => {
 
   const signIn = e => {
     e.preventDefault();
-    signInWithEmailAndPassword(
+    auth.signInWithEmailAndPassword(
       auth, 
       emailRef.current.value,
       passwordRef.current.value
