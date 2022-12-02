@@ -1,10 +1,11 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { auth } from '../firebase'
-import Navbar from '../Navbar'
-import { selectUser } from '../reducers/userSlice'
-import './ProfilePage.css'
-import PlanPage from './PlanPage'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { auth } from '../firebase';
+import Navbar from '../Navbar';
+import { selectUser } from '../reducers/userSlice';
+import PlanPage from './PlanPage';
+import './ProfilePage.css';
+
 
 const ProfilePage = () => {
   const user = useSelector(selectUser);

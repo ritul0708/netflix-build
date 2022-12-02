@@ -6,12 +6,12 @@ const PlanPage = () => {
   const [subscriptions, setSubscriptions] = useState([]);
 
   useEffect(() => {
-    db.collection('subscriptions')
-    .where("active", "==", true)
+    db.collection("subscriptions")
+    .where("active","==",true)
     .get()
     .then(querySnapshot => {
       const subscriptions = {};
-      querySnapshot.forEach(async (subscriptionDoc) => {
+      querySnapshot.forEach(async subscriptionDoc => {
         subscriptions[subscriptionDoc.id] = subscriptionDoc.data();
         const priceSnap = await subscriptionDoc.ref.collection("prices").get();
         priceSnap.docs.forEach(price => {
@@ -22,10 +22,11 @@ const PlanPage = () => {
         });
       });
       setSubscriptions(subscriptions);
-    });
-  }, []);
+    })
+  }, [])
 
   console.log(subscriptions);
+
 
   return (
     <div className='planPage'>
