@@ -10,7 +10,6 @@ const SignUpPage = () => {
   const register = e => {
     e.preventDefault();
     auth.createUserWithEmailAndPassword(
-      auth,
       emailRef.current.value,
       passwordRef.current.value
     )
@@ -25,7 +24,6 @@ const SignUpPage = () => {
   const signIn = e => {
     e.preventDefault();
     auth.signInWithEmailAndPassword(
-      auth, 
       emailRef.current.value,
       passwordRef.current.value
     )

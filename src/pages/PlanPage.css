@@ -1,0 +1,24 @@
+.planPage-plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+.planPage-plan:hover {
+  opacity: 1;
+}
+
+.planPage-plan > button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.planPage-plan-disabled > button {
+  background-color: gray !important;
+}
